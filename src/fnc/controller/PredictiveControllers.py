@@ -499,7 +499,7 @@ class LMPC(MPC):
         Sel_Qfun = self.Qfun[it][indexSSandQfun]
 
         # Modify the cost if the predicion has crossed the finisch line
-        if self.xPred == []:
+        if len(self.xPred) == 0:
             Sel_Qfun = self.Qfun[it][indexSSandQfun]
         elif (np.all((self.xPred[:, 4] > self.predictiveModel.map.TrackLength) == False)):
             Sel_Qfun = self.Qfun[it][indexSSandQfun]

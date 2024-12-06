@@ -12,8 +12,8 @@ def initMPCParams(n, d, N, vt):
     Fu = np.kron(np.eye(2), np.array([1, -1])).T
     bu = np.array([[0.5],   # -Min Steering
                    [0.5],   # Max Steering
-                   [10.0],  # -Min Acceleration
-                   [10.0]]) # Max Acceleration
+                   [16.0],  # -Min Acceleration
+                   [8.0]]) # Max Acceleration
 
     # Tuning Parameters
     Q = np.diag([1.0, 1.0, 1, 1, 0.0, 100.0]) # vx, vy, wz, epsi, s, ey
