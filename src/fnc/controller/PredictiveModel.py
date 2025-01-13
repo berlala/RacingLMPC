@@ -83,9 +83,12 @@ class PredictiveModel():
 
         # ===========================
         # ===== Linearization =======
-        vx = x[0]; vy   = x[1]
-        wz = x[2]; epsi = x[3]
-        s  = x[4]; ey   = x[5]
+        vx   = x[0]; 
+        vy   = x[1];
+        wz   = x[2]; 
+        epsi = x[3]
+        s  = x[4]; 
+        ey = x[5];
         dt = self.dt
 
         if s < 0:
